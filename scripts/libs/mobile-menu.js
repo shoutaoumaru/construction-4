@@ -5,6 +5,7 @@ class MobileMenu {
     this.DOM.container = document.querySelector('.mobile-button');
     this.DOM.nav = document.querySelector('.mobile-menu');
     this.DOM.logo = document.querySelector('.logo');
+
     this.eventType = this._getEventType();
     this._addEvent();
   }

@@ -24,10 +24,4 @@ document.addEventListener('DOMContentLoaded', function () {
       element.classList.add("reveal");
     }, 1500)
   });
-  // const loadAnimation3 = document.querySelectorAll('.clip-js3');
-  // loadAnimation3.forEach(function (element) {
-  //   setTimeout(() => {
-  //     element.classList.add("reveal");
-  //   }, 6500)
-  // });
 });
