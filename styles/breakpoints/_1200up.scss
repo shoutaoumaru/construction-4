@@ -2,25 +2,51 @@
   &__img {
     height: 45vh;
   }
+
+  .c-title {
+    left: -20%;
+  }
 }
+
 
 .top-view {
+  .hero {
+    &__text {
+      left: 12%;
+    }
+  }
+
   .swiper-container {
-    height: 100vh;
+    height: 85vh;
   }
 }
 
-.p-message {
-  &__img-item {
-    height: 200px;
+.p-about {
+  & .c-container {
+    margin-left: 10%;
+  }
+
+  &__img {
+    ul {
+      li {
+        height: 300px;
+      }
+    }
   }
 }
 
-.p-feature {
-  &__item {
-    padding: 40px;
+.p-services {
+  & .c-container {
+    margin-left: 10%;
   }
 }
+
+.p-works {
+  & .c-container {
+    margin-left: 10%;
+  }
+}
+
 
 //* * * * * * 会社概要 * * * * * * * 
 .c-company {

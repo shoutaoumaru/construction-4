@@ -1,12 +1,12 @@
-$cBlack: rgb(48, 47, 47);
+$cShadowBlack :black;
+$cBlack: rgb(39, 39, 39);
 $cSubBlack: #586166;
-$cGray: #858585;
+$cGray: #949494;
 $cWhite:#fff;
-$cSubWhite:rgb(248, 245, 245);
+$cSubWhite:rgb(247, 247, 247);
 $cBlue: rgb(52, 126, 175);
 $cSubBlue: #e2eaf3;
-;
-$contentMaxWidth: 1070px;
+$cOrange :#F99900;
 $breakpoints: ('md': 'screen and (min-width: 600px)',
   'lr': 'screen and (min-width: 960px)',
   'lg': 'screen and (min-width: 1200px)',
@@ -49,7 +49,7 @@ $breakpoints: ('md': 'screen and (min-width: 600px)',
 }
 
 .c-txt-md {
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 2px;
   line-height: 2;
 
@@ -72,7 +72,7 @@ $breakpoints: ('md': 'screen and (min-width: 600px)',
   line-height: 2;
 
   @include mq(md) {
-    font-size: 16px;
+    line-height: 1.7;
   }
 
   @include mq(lr) {
@@ -80,7 +80,7 @@ $breakpoints: ('md': 'screen and (min-width: 600px)',
   }
 
   @include mq(lg) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -88,7 +88,7 @@ $breakpoints: ('md': 'screen and (min-width: 600px)',
   font-size: 10px;
   letter-spacing: 2px;
   line-height: 2;
-  color: $cBlue;
+  color: $cOrange;
 
   @include mq(md) {
     font-size: 12px;
@@ -104,7 +104,7 @@ $breakpoints: ('md': 'screen and (min-width: 600px)',
 }
 
 .mb-sm {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @include mq(md) {
     margin-bottom: 30px;
@@ -119,7 +119,7 @@ $breakpoints: ('md': 'screen and (min-width: 600px)',
   margin-bottom: 50px;
 
   @include mq(md) {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   @include mq(lr) {
@@ -140,7 +140,7 @@ $breakpoints: ('md': 'screen and (min-width: 600px)',
 }
 
 .c-container {
-  padding: 0 6vw;
+  padding: 0 5vw;
 
   @include mq(md) {
     padding: 0 3vw;

@@ -11,9 +11,9 @@
     z-index: 9999;
     background-color: $cSubWhite;
     // backdrop-filter: blur(12px);
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-right: 2px solid $cBlack;
-    height: 110px;
+    height: 120px;
     transition: all .5s;
     border-bottom: 1px solid $cGray;
 
@@ -26,7 +26,7 @@
     position: absolute;
     bottom: 5%;
     left: 0;
-    height: 110px;
+    height: 120px;
     background-color: $cSubWhite;
     padding: 20px 20px;
     border-right: 2px solid $cBlack;
@@ -36,6 +36,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 6000;
+    text-align: center;
 
     & a {
       position: relative;
