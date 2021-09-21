@@ -111,12 +111,12 @@
     width: 100%;
     text-align: center;
     list-style: none;
-    padding-top: 140px;
+    padding-top: 100px;
   }
 
   &__item {
     opacity: 0;
-    @extend .mb-md;
+    @extend .mb-sm;
     font-size: 18px;
 
     & a {
@@ -133,7 +133,7 @@
     }
 
     &-item {
-      width: 30%;
+      width: 31%;
       text-align: center;
 
       & span {
