@@ -42,10 +42,10 @@
     left: 0;
     display: flex;
     justify-content: space-between;
-    z-index: 9000;
+    z-index: 4000;
     width: 100%;
     background-color: $cWhite;
-    opacity: 0.8;
+    opacity: 0.9;
 
     & .pc-nav-list {
       display: flex;
@@ -65,20 +65,6 @@
         display: block;
         text-align: center;
         font-size: 10px;
-      }
-    }
-
-    @media (min-width:960px) {
-      & .logo {
-        height: 60px;
-      }
-
-      & .pc-nav-item {
-        font-size: 20px;
-
-        & small {
-          font-size: 14px;
-        }
       }
     }
 
@@ -111,12 +97,12 @@
     width: 100%;
     text-align: center;
     list-style: none;
-    padding-top: 100px;
+    padding-top: 140px;
   }
 
   &__item {
     opacity: 0;
-    @extend .mb-sm;
+    @extend .mb-md;
     font-size: 18px;
 
     & a {
@@ -125,7 +111,7 @@
   }
 
   .contact-btn {
-    padding: 0 20px;
+    padding: 0 10px;
 
     &-list {
       display: flex;
@@ -133,7 +119,7 @@
     }
 
     &-item {
-      width: 31%;
+      width: 30%;
       text-align: center;
 
       & span {
@@ -161,12 +147,13 @@
         &::after {
           position: absolute;
           top: 50%;
-          right: -13px;
+          right: -20px;
           content: '';
           height: 1px;
           width: 20px;
           display: block;
           background-color: $cOrange;
+          z-index: 100;
         }
       }
 
