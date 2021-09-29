@@ -12,20 +12,18 @@
   stroke: #232339;
 }
 
-
-.svg-animation {
-  display: none;
+.superwrapper {
+  opacity: 0;
 }
 
 .pace-running {
   opacity: 0;
-
-  .superwrapper {
-    opacity: 0;
-  }
 }
 
 .pace-done {
+  .superwrapper {
+    opacity: 1;
+  }
 
   .svg-animation {
     position: fixed;

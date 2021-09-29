@@ -2023,16 +2023,16 @@ body.hidden {
   stroke: #232339;
 }
 
-.svg-animation {
-  display: none;
+.superwrapper {
+  opacity: 0;
 }
 
 .pace-running {
   opacity: 0;
 }
 
-.pace-running .superwrapper {
-  opacity: 0;
+.pace-done .superwrapper {
+  opacity: 1;
 }
 
 .pace-done .svg-animation {
