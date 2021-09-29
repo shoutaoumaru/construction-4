@@ -2027,11 +2027,7 @@ body.hidden {
   opacity: 0;
 }
 
-.pace-done .superwrapper {
-  opacity: 1;
-}
-
-.pace-done .svg-animation {
+.svg-animation {
   position: fixed;
   top: 0;
   left: 0;
@@ -2053,13 +2049,17 @@ body.hidden {
   padding: 0 10vw;
 }
 
-.pace-done .svg-animation .svg-inner {
+.svg-animation .svg-inner {
   padding: 20px;
 }
 
-.pace-done .svg-animation .svg-inner svg {
+.svg-animation .svg-inner svg {
   height: 100%;
   width: 100%;
+}
+
+.pace-done .superwrapper {
+  opacity: 1;
 }
 
 @media (min-width: 600px) {

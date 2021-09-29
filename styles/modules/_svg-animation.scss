@@ -16,33 +16,33 @@
   opacity: 0;
 }
 
+.svg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: byeOpening 5.5s forwards;
+  padding: 0 10vw;
+
+  & .svg-inner {
+    padding: 20px;
+
+    & svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
 .pace-done {
   .superwrapper {
     opacity: 1;
-  }
-
-  .svg-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99999;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: byeOpening 5.5s forwards;
-    padding: 0 10vw;
-
-    & .svg-inner {
-      padding: 20px;
-
-      & svg {
-        height: 100%;
-        width: 100%;
-      }
-    }
   }
 }
 
