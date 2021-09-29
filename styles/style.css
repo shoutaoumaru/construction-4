@@ -229,11 +229,6 @@
   overflow: hidden;
 }
 
-.swiper-slide-active .hero-img {
-  -webkit-animation: zoom 6.5s forwards;
-          animation: zoom 6.5s forwards;
-}
-
 .scrolldown {
   display: inline-block;
   position: absolute;
