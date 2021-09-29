@@ -227,9 +227,6 @@
 
 .swiper-slide {
   overflow: hidden;
-  height: 80vh;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 
 .swiper-slide-active .hero-img {
@@ -677,6 +674,10 @@ body.hidden {
 
 .top-view .hero {
   position: relative;
+}
+
+.top-view .hero .swiper-slide {
+  height: 80vh;
 }
 
 .top-view .hero__text {

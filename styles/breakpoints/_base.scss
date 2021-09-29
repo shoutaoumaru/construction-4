@@ -357,6 +357,10 @@ body.hidden {
   .hero {
     position: relative;
 
+    .swiper-slide {
+      height: 80vh;
+    }
+
     &__text {
       position: absolute;
       bottom: -15%;
