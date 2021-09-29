@@ -6,12 +6,12 @@
 .swiper-slide {
   overflow: hidden;
 
-  &-active {
+  // &-active {
 
-    & .hero-img {
-      animation: zoom 6.5s forwards;
-    }
-  }
+  //   & .hero-img {
+  //     animation: zoom 6.5s forwards;
+  //   }
+  // }
 }
 
 //**********  スクロールダウン  ********
