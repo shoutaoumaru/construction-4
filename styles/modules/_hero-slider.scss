@@ -1,10 +1,11 @@
 .swiper-container {
   overflow: visible !important;
-  height: 80vh;
 }
 
 .swiper-slide {
   overflow: hidden;
+  height: 80vh;
+  backface-visibility: hidden;
 
   &-active {
 
