@@ -20,12 +20,6 @@
 <body>
   <div class="superwrapper animsition">
     <div class="pageBg">
-      <span class="lines">
-        <span class="line-t"></span>
-        <span class="line-r"></span>
-        <span class="line-l"></span>
-        <span class="line-b"></span>
-      </span>
       <span class="txt">Riv<br>Construction</span>
     </div>
     <!-- /.pageBg -->
@@ -109,7 +103,6 @@
       <!-- /.c-topview -->
       <section id="business01" class="c-business-item">
         <h2 class="c-title">
-          <span class="en">archi<br>tecture</span>
           <span class="ja">建設事業</span>
         </h2>
         <div class="c-business-item__wrap">
@@ -128,7 +121,6 @@
       <!-- /#business01 -->
       <section id="business02" class="c-business-item">
         <h2 class="c-title">
-          <span class="en">Civil<br>engineering</span>
           <span class="ja">土木工事事業</span>
         </h2>
         <div class="c-business-item__wrap">
@@ -147,7 +139,6 @@
       <!-- /#business02 -->
       <section id="business03" class="c-business-item">
         <h2 class="c-title">
-          <span class="en">Home<br>remodeling</span>
           <span class="ja">住宅リフォーム事業</span>
         </h2>
         <div class="c-business-item__wrap">

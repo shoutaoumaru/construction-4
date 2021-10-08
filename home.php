@@ -71,10 +71,6 @@
     <!-- /.svg-animation -->
     <div class="pageBg">
       <span class="lines">
-        <span class="line-t"></span>
-        <span class="line-r"></span>
-        <span class="line-l"></span>
-        <span class="line-b"></span>
       </span>
       <span class="txt">Riv<br>Construction</span>
     </div>
@@ -196,7 +192,7 @@
               </div>
               <div class="more-btn item">
                 <a href="/about/about.html" class="more-btn__link slide-bg animsition-link">
-                  <span class="c-txt-sm">more</span>
+                  <span class="c-txt-sm">View More</span>
                   <span class="bg"></span></a>
               </div>
             </div>
@@ -224,7 +220,7 @@
               </div>
               <div class="more-btn">
                 <a href=" <?php echo esc_url( home_url('/business')); ?>" class="more-btn__link slide-bg animsition-link">
-                  <span class="c-txt-sm">more</span>
+                  <span class="c-txt-sm">View More</span>
                   <span class="bg"></span></a>
               </div>
             </div>
