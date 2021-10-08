@@ -1,27 +1,19 @@
+<?php 
+/* Template Name: contact
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お知らせ一覧 | 建設業テンプレート4</title>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css">
+  <title>お問い合わせ | </title>
+  <?php get_header(); ?>
 </head>
-
-<body>
-  <div id="main-wrapper" class="news-wrapper animsition">
-    <div class="pageBg">
-      <span class="txt">Riv<br>Construction</span>
-    </div>
-    <!-- /.pageBg -->
+<body class="animsition">
+  <div class="contents-wrapper">
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class=" logo__img">
-          <a href="/">
+          <a href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -87,44 +79,38 @@
     <!-- /.header -->
     <section class="c-topview">
       <div class="c-topview__img">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_4.jpg" alt="">
-      </div>
-      <h2 class="c-title">
-        <span class="en">news</span>
-        <span class="ja">ニュース</span>
-      </h2>
-    </section>
-    <!-- /.c-topview -->
-    <section class="c-news">
-      <div class="c-container">
-        <h2 class="c-news__title clip-text left">
-          <p class="contents-title">新着情報</p>
-        </h2>
-        <ul class="c-news__list">
-          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-            <li class="c-news__item">
-              <a href="<?php the_permalink() ;?>" class="c-news__link animsition-link">
-                <span class="c-news__date c-txt-sm"><?php echo get_the_date(); ?></span>
-                <p class="c-news__tit c-txt-sm"><?php the_title(); ?></p>
-              </a>
-            </li>
-          <?php endwhile; ?>
-          <?php endif; ?>
-        </ul>
-        <!-- pagenesion -->
-        <?php if( function_exists ("the_pagination") ) the_pagination(); ?>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_2.jpg" alt="">
+        </div>
+        <div class="c-topview__title">
+          <h2 class="c-topview__text">
+            <p class="c-txt-lr">お問い合わせ</p>
+            <p class="c-txt-sm">CONTACT</p>
+          </h2>
       </div>
     </section>
-    <!-- /.c-news -->
-    <?php get_template_part('includes/c-footer'); ?>
+      <!-- /.c-topview -->
+      <!-- コンタクトフォーム -->
+    <div class="c-contact">
+      <div class="contact-form">
+          <div class="c-container">
+            <h1 class="c-title">
+              <span>CONTACT</span>
+            </h1>
+            <p class="c-contact-text">以下必要事項をご記入の上、「送信する」ボタンを押して下さい。</p>
+            <?php echo apply_filters('the_content', '[contact-form-7 id="5" title="コンタクトフォーム 1"]'); ?>
+          </div>
+          </div>
+          <!-- /コンタクトフォーム -->
+      </div>
+    </div>
+    <!-- /.c-contsact -->
   </div>
-  <!-- /.main-wrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- /.superwrapper -->
+  <?php get_template_part('includes/c-footer'); ?>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
-  <!-- <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script> -->
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
 </body>
-
 </html>

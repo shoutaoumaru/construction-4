@@ -1,27 +1,20 @@
+<?php 
+/* Template Name: thanks
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お知らせ一覧 | 建設業テンプレート4</title>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css">
+  <title>お問い合わせありがとうございます | </title>
+  <?php get_header(); ?>
 </head>
-
 <body>
-  <div id="main-wrapper" class="news-wrapper animsition">
-    <div class="pageBg">
-      <span class="txt">Riv<br>Construction</span>
-    </div>
-    <!-- /.pageBg -->
+  <div class="superwrapper animsition">
+    <div class="c-thanks">
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class=" logo__img">
-          <a href="/">
+          <a href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -85,46 +78,33 @@
       <!-- /.reserve-btn -->
     </header>
     <!-- /.header -->
-    <section class="c-topview">
-      <div class="c-topview__img">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/home/img_4.jpg" alt="">
+      <div class="c-thanks-text">
+        <div class="c-container">
+          <h2 class="c-title">お問い合わせありがとうございます。</h2>
+          <div class="c-thanks-desc">
+            <div class="c-thanks-item">
+              <p class="c-txt-sm">ご入力いただいた情報は無事に送信されました。<br>お客様に受付完了メールを1通送信しましたのでご確認下さい。</p>
+            </div>
+            <div class="c-thanks-item">
+              <h3>受付完了メールが届かない場合</h3>
+              <p class="c-txt-sm">ご利用のメールサービスの設定によっては迷惑フォルダへ送られている場合もございますので、迷惑メールフォルダも合わせてご確認下さい。</p>
+              <p class="c-txt-sm">もし、24時間経っても受付完了メールが届かない場合は、お手数ですが再度お問い合わせフォームかお電話にてお問い合わせ下さい</p>
+            </div>
+          </div>
+          <div class="c-thanks-btn">
+            <a class="animsition-link" href="/">トップページに戻る</a>
+          </div>
+        </div>
       </div>
-      <h2 class="c-title">
-        <span class="en">news</span>
-        <span class="ja">ニュース</span>
-      </h2>
-    </section>
-    <!-- /.c-topview -->
-    <section class="c-news">
-      <div class="c-container">
-        <h2 class="c-news__title clip-text left">
-          <p class="contents-title">新着情報</p>
-        </h2>
-        <ul class="c-news__list">
-          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-            <li class="c-news__item">
-              <a href="<?php the_permalink() ;?>" class="c-news__link animsition-link">
-                <span class="c-news__date c-txt-sm"><?php echo get_the_date(); ?></span>
-                <p class="c-news__tit c-txt-sm"><?php the_title(); ?></p>
-              </a>
-            </li>
-          <?php endwhile; ?>
-          <?php endif; ?>
-        </ul>
-        <!-- pagenesion -->
-        <?php if( function_exists ("the_pagination") ) the_pagination(); ?>
-      </div>
-    </section>
-    <!-- /.c-news -->
-    <?php get_template_part('includes/c-footer'); ?>
+    </div>
+    <!-- /.c-contact -->
   </div>
-  <!-- /.main-wrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- /.superwrapper -->
+  <?php get_template_part('includes/c-footer'); ?>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
-  <!-- <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script> -->
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
 </body>
-
 </html>

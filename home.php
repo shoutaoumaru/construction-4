@@ -346,12 +346,10 @@
       <!-- /.p-contact -->
     </main>
     <!-- /#main-contents -->
-    <?php get_template_part('includes/c-footer'); ?>      
-    <!-- /.footer -->
-    <?php get_template_part('includes/c-header'); ?>      
-    <!-- /.mobile-menu -->
+    <?php get_template_part('includes/c-footer'); ?>
   </div>
   <?php get_footer(); ?>
+  
 </body>
 
 </html>

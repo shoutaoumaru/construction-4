@@ -19,12 +19,6 @@
 <body>
   <div class="superwrapper animsition">
     <div class="pageBg">
-      <span class="lines">
-        <span class="line-t"></span>
-        <span class="line-r"></span>
-        <span class="line-l"></span>
-        <span class="line-b"></span>
-      </span>
       <span class="txt">Riv<br>Construction</span>
     </div>
     <!-- /.pageBg -->
@@ -317,10 +311,7 @@
       <!-- /.p-contact -->
     </main>
     <!-- /#main-contents -->
-    <?php get_template_part('includes/c-footer'); ?>      
-    <!-- /.footer -->
-    <?php get_template_part('includes/c-header'); ?>     
-    <!-- /.mobile-menu -->
+    <?php get_template_part('includes/c-footer'); ?>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
