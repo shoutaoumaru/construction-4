@@ -181,18 +181,6 @@ body.hidden {
     font-size: 34px;
     padding-right: 60px;
 
-    &::before {
-      position: absolute;
-      left: -10px;
-      bottom: 0;
-      content: '';
-      width: 50px;
-      height: 50px;
-      z-index: -1;
-      display: block;
-      background-color: $cOrange;
-    }
-
     &::after {
       position: absolute;
       top: 50%;
@@ -228,18 +216,6 @@ body.hidden {
     padding-right: 60px;
     display: block;
     margin-bottom: 10px;
-
-    &::before {
-      position: absolute;
-      left: -10px;
-      bottom: 0;
-      content: '';
-      width: 30px;
-      height: 30px;
-      z-index: -1;
-      display: block;
-      background-color: $cOrange;
-    }
   }
 
   & .ja {
@@ -272,19 +248,7 @@ body.hidden {
 .more-btn {
   position: relative;
   display: inline-block;
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: -20px;
-    width: 40px;
-    height: 1px;
-    background-color: $cOrange;
-    transition: .3s;
-    z-index: 100;
-  }
+  text-align: center;
 
   &__link {
     background-color: $cShadowBlack;
@@ -297,6 +261,27 @@ body.hidden {
     & span {
       position: relative;
       color: $cWhite;
+
+      &:first-child {
+        padding-right: 30px;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 20px;
+          background-image: url(/images/common/next.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          transition: .3s;
+          z-index: 100;
+        }
+      }
     }
 
     &.slide-bg {
@@ -352,46 +337,26 @@ body.hidden {
 //.topview
 .top-view {
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
   .hero {
     position: relative;
 
     .swiper-slide {
-      height: 80vh;
+      height: 60vh;
     }
 
     &__text {
       position: absolute;
-      bottom: -15%;
-      left: 4%;
-      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      margin: auto;
       z-index: 6000;
-      color: black;
-
-      &::before {
-        position: absolute;
-        left: -10px;
-        bottom: 0;
-        content: '';
-        width: 50px;
-        height: 50px;
-        z-index: -1;
-        display: block;
-        background-color: $cOrange;
-      }
-
-      &::after {
-        position: absolute;
-        left: 175px;
-        bottom: 155px;
-        content: '';
-        width: 130px;
-        height: 50px;
-        z-index: -1;
-        display: block;
-        background-color: $cOrange;
-      }
+      color: $cBlack;
+      text-shadow: 2px 2px 2px $cWhite;
+      width: 100%;
+      text-align: center;
 
       & h2 {
         font-size: 42px;
@@ -711,26 +676,26 @@ body.hidden {
 
       &::before {
         width: 88px;
-        background-color: $cBlue;
+        background-color: $cOrange;
         transition: all .2s ease-out;
       }
 
       &::after {
         height: 88px;
-        background-color: $cBlue;
+        background-color: $cOrange;
         transition: all .2s ease-out;
       }
 
       & span {
         &::before {
           width: 88px;
-          background-color: $cBlue;
+          background-color: $cOrange;
           transition: all .2s ease-out;
         }
 
         &::after {
           height: 88px;
-          background-color: $cBlue;
+          background-color: $cOrange;
           transition: all .2s ease-out;
         }
       }
@@ -980,6 +945,27 @@ body.hidden {
 
     &__desc {
       @extend .c-container;
+    }
+
+    & .c-title {
+      & .ja {
+        position: relative;
+        font-size: 28px;
+        padding-left: 32px;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+          content: '';
+          display: block;
+          background-color: $cOrange;
+          height: 3px;
+          width: 25px;
+        }
+      }
     }
   }
 }
