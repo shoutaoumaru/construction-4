@@ -1446,6 +1446,10 @@ body.hidden {
   color: #272727;
 }
 
+.c-contact {
+  margin-top: 100px;
+}
+
 .c-contact-text {
   margin-bottom: 30px;
 }
