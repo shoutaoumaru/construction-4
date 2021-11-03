@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 </head>
 
-<body>
+<body class="animsition">
   <div class="superwrapper">
     <div class="svg-animation">
       <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.06 99.83"
